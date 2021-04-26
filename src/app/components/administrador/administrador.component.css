@@ -1,0 +1,28 @@
+.send  {
+    background-color: #00c2d6;
+  }
+  
+i {
+    color: #fff;
+}
+
+.lorem {
+    width: 500px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, tr, label {
+    font-family: 'Open Sans Condensed', sans-serif!important;
+    color: rgb(105, 105, 105);
+  }
+
+  thead {
+    background-color: #cacacaed !important;
+
+  }
+
+  .btn-create {
+      background-color: #00c2d6!important;
+  }

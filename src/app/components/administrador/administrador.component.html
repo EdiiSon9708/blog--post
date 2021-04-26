@@ -1,0 +1,151 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12">
+      <mat-tab-group mat-align-tabs="end">
+        <mat-tab label="Post">
+
+          <div class="my-4">
+            <button mat-button class="btn-create mr-4" (click)="openDialogA()"> <span class="text-white">Crear autor</span> </button>
+            <button mat-button class="btn-create" (click)="openDialogP()"><span class="text-white">Crear post</span></button>
+          </div>
+
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th scope="col">No.</th>
+                  <th scope="col">Autor</th>
+                  <th scope="col">Titulo</th>
+                  <th scope="col">Contenido</th>
+                  <th scope="col">Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of [1,2,3,4,5]">
+                  <th scope="row 1">{{item}}</th>
+                  <td scope="row 3">Jorge</td>
+                  <td>Conferencia HTML y css</td>
+                  <td> <p class="lorem">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa error numquam aliquam,
+                    reprehenderit eos rerum!
+                  </p>  </td>
+                  <td>
+                    <div class="row">
+                      <div class="col-6 px-0">
+                        <button data-toggle="tooltip" data-placement="bottom" title="Ver" class="send texto mr-2"  (click)="onView(item)" mat-fab aria-label="Example icon button with a delete icon">
+                          <i class="fa fa-eye"></i>
+                        </button>
+                      </div>
+                      <div class="col-6 px-0">
+                        <button data-toggle="tooltip" data-placement="bottom" title="Eliminar" (click)="onDel(item)"  mat-fab aria-label="Example icon button with a delete icon">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+        </mat-tab>
+        <mat-tab label="Mi perfil">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="text-center profile text-muted mt-3">Mi perfil</h1>
+              </div>
+              <div class="col-6">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Nombres</mat-label>
+                  <input matInput placeholder="Ej: Jorge" value="Edinson Armando">
+                  <mat-icon matSuffix>edit</mat-icon>
+                </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Apellidos</mat-label>
+                  <input matInput placeholder="Ej: Nova" value="Castillo Amador">
+                  <mat-icon matSuffix>edit</mat-icon>
+                </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Tipo de documento</mat-label>
+                  <mat-select disableRipple>
+                    <mat-option value="1">Tarjeta de identidad</mat-option>
+                    <mat-option value="2">Cedula de ciudadania</mat-option>
+                    <mat-option value="3">Nit</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Documento</mat-label>
+                  <input matInput placeholder="Ej: 123456789" type="number" value="1073248789">
+                  <mat-icon matSuffix>edit</mat-icon>
+                </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Telefono</mat-label>
+                  <input matInput placeholder="Ej: 3214569856" type="number" value="3217581844">
+                  <mat-icon matSuffix>edit</mat-icon>
+                </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Correo</mat-label>
+                  <input matInput placeholder="Ej: Edinson@info.com" type="text" value="edinsoncastilloa@gmail.com">
+                  <mat-icon matSuffix>edit</mat-icon>
+                </mat-form-field>
+              </div>
+              <div class="col-4">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Departamento</mat-label>
+                  <mat-select disableRipple>
+                    <mat-option value="1">Cundinamarca</mat-option>
+                    <mat-option value="2">Amazonas</mat-option>
+                    <mat-option value="3">Antioquia</mat-option>
+                    <mat-option value="3">Cartagena</mat-option>
+                    <mat-option value="3">Caldas</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="col-4">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Municipio</mat-label>
+                  <mat-select disableRipple>
+                    <mat-option value="1">Mosquera</mat-option>
+                    <mat-option value="2">Funza</mat-option>
+                    <mat-option value="3">Bogota</mat-option>
+                    <mat-option value="3">Medellin</mat-option>
+                    <mat-option value="3">Cali</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="col-4">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Dirección</mat-label>
+                  <input matInput placeholder="Ej: calle21 # 2-3" type="text" value="calle17a#8a-71">
+                  <mat-icon matSuffix>edit</mat-icon>
+                </mat-form-field>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col-6"></div>
+          <div class="col-6"></div>
+          <div class="col-6"></div>
+          <div class="col-6"></div>
+          <div class="col-6"></div>
+
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

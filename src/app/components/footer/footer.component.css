@@ -1,0 +1,25 @@
+.footer {
+    background-color: #cacacaed;
+}
+
+.example-form {
+    min-width: 150px!important;
+    max-width: 500px!important;
+    width: 100%!important;
+}
+  
+.example-full-width {
+    width: 100%!important;
+}
+
+.send  {
+  background-color: #00c2d6;
+}
+
+a {
+  color: #00c2d6;
+}
+
+a:hover {
+  color: #fff;
+}

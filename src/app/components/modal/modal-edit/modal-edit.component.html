@@ -1,0 +1,36 @@
+<h1 mat-dialog-title class="text-center">Crear nuevo post</h1>
+<div mat-dialog-content>
+    <div class="row">
+        <div class="col-6">
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Titulo</mat-label>
+                  <input formControlName="titulo" matInput placeholder="Agregar titulo">
+                  <mat-icon matSuffix>edit</mat-icon>
+                </mat-form-field>
+        </div>
+
+        <div class="col-6">
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-label>Selecciona autor</mat-label>
+                    <mat-select formControlName="autor" disableRipple>
+                      <mat-option value="1">Option 1</mat-option>
+                      <mat-option value="2">Option 2</mat-option>
+                      <mat-option value="3">Option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+        </div>
+        
+        <div class="col-12">
+            <div class="example-form">
+                <mat-form-field class="example-full-width w-100" appearance="outline">
+                    <mat-label>Agregar contenido</mat-label>
+                    <textarea formControlName="contenido" matInput placeholder="Escribir contenido" rows="6"></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+</div>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancelar</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Actualizar</button>
+</mat-dialog-actions>

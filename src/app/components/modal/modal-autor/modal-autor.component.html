@@ -1,0 +1,30 @@
+<h1 mat-dialog-title class="text-center">Crear nuevo autor</h1>
+<div mat-dialog-content>
+    <p class="text-center mb-3">
+        Registra un nuevo autor para crear un post
+    </p>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <p>
+                <mat-form-field appearance="fill">
+                  <mat-label>Nombre</mat-label>
+                  <input matInput placeholder="Ej: Edinson">
+                  <mat-icon matSuffix>edit</mat-icon>
+                </mat-form-field>
+              </p>
+        </div>
+        <div class="col-12 col-lg-6">
+            <p>
+                <mat-form-field appearance="fill">
+                  <mat-label>Apellido</mat-label>
+                  <input matInput placeholder="Ej: Castillo">
+                  <mat-icon matSuffix>edit</mat-icon>
+                </mat-form-field>
+              </p>
+        </div>
+    </div>
+</div>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancelar</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Crear</button>
+</mat-dialog-actions>

@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Open Sans Condensed', sans-serif!important; color: rgb(105, 105, 105); }
+
+h1, h2, h3, h4, h5, h6, p, span, label {
+    font-family: 'Open Sans Condensed', sans-serif!important;
+    color: rgb(105, 105, 105);
+  }
+  
+  .texto {
+    font-family: 'Open Sans Condensed', sans-serif!important;
+    color: rgb(105, 105, 105);
+  }

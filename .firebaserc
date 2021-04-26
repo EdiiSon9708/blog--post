@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "blog-9fe23": {
+      "hosting": {
+        "blog": [
+          "blog-9fe23"
+        ]
+      }
+    }
+  }
+}

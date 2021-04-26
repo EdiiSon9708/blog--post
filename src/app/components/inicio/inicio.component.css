@@ -1,0 +1,41 @@
+.reaction:active, .reaction:focus {
+    color: #3d94ea;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, label {
+  font-family: 'Open Sans Condensed', sans-serif!important;
+  color: rgb(105, 105, 105);
+}
+  
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  label {
+    color: rgb(105, 105, 105);
+    cursor: pointer;
+  }
+  
+  .clasificacion {
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: #3d94ea;
+  }
+  
+  input[type="checkbox"]:checked ~ label {
+    color: #3d94ea;
+  }
+
+a {
+    color: #000;
+    text-decoration:none;
+}
+
+.gray {
+  background-color: #bebebeed;
+}
+

@@ -1,0 +1,37 @@
+a {
+    color: #fff!important;
+}
+
+i:hover {
+    color: #000!important;
+}
+
+nav {
+    background-color: #00c2d6!important;
+}
+
+.cabecera {
+    background-color: #0a182f;
+}
+
+.titleSecond {
+    color: #00c2d6!important;
+}
+
+
+.distri {
+    text-shadow: 2px 2px 2px #00c2d6;
+}
+
+.ediison {
+    text-shadow: 2px 2px 2px #fff;
+}
+
+h5 {
+    text-shadow: 1px 1px 1px #00c2d6;
+}
+
+h2:hover {
+    color: #fff!important;
+    text-shadow: 1px 1px 1px #000;
+}
